@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.slider--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider--feature {
+    text-align: center;
+}
+
+.feature--title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.feature--text {
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.slider__btn-right,
+.slider__btn-left {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    color: #eee;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.feature__btn {
+    background: #fff;
+    text-transform: uppercase;
+    border: none;
+    color: #444;
+    border: 1px solid #444;
+    outline: none;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+}
+
+.slider__btn-left:hover,
+.slider__btn-right:hover {
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s;
+}
